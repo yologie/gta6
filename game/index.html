@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Solmar City — an original sun-soaked open-world crime game. Steal cars, run missions for Dahlia, outdrive the Solmar PD.">
+<title>Solmar City — Open-World Crime</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #0b1020;
+    height: 100%;
+    overflow: hidden;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  canvas {
+    display: block;
+    width: min(100vw, calc(100vh * 16 / 9));
+    height: min(100vh, calc(100vw * 9 / 16));
+    background: #7ec850;
+    box-shadow: 0 0 80px rgba(255, 209, 102, 0.12), 0 0 24px rgba(0, 0, 0, 0.6);
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="720" aria-label="Solmar City: an open-world crime game. Drive, steal cars, complete missions and outrun the police."></canvas>
+<noscript><p style="color:#fff8e7;font-family:system-ui,sans-serif;text-align:center">Solmar City needs JavaScript to play.</p></noscript>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
